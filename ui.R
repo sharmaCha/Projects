@@ -27,7 +27,7 @@ shinyUI(pageWithSidebar(
     tags$hr(),
     imageOutput("originImage", height = "auto"),
     tags$hr(),
-    h3("What is in it?"),
+    h3("Classification Labels"),
     tags$hr(),
     verbatimTextOutput("res")
   )
