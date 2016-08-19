@@ -1,4 +1,4 @@
-# Image Classification using MXNetR
+# Image Classification using MXNetR and Shiny
 
 To run this shiny app:
 
