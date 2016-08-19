@@ -1,4 +1,5 @@
 require(mxnet)
+install.packages("mxnet")
 require(imager)
 require(shiny)
 require(jpeg)
@@ -52,7 +53,7 @@ shinyServer(function(input, output) {
     list(src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          '38398.jpg'
+          'cthd.jpg'
         } else {
           ntext()
         }
@@ -62,7 +63,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          '38398.jpg'
+          'cthd.jpg'
         } else {
           input$file1$datapath
         }
@@ -72,12 +73,12 @@ shinyServer(function(input, output) {
     },
     title = "Original Image")
   }, deleteFile = FALSE)
-  
+ print(input$file1)
   output$res <- renderText({
     src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          '38398.jpg'
+          'cthd.jpg'
         } else {
           ntext()
         }
@@ -87,7 +88,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          '38398.jpg'
+          'cthd.jpg'
         } else {
           input$file1$datapath
         }
