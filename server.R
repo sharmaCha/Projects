@@ -52,7 +52,7 @@ shinyServer(function(input, output) {
     list(src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          'cthd.jpg'
+          '38398.jpg'
         } else {
           ntext()
         }
@@ -62,7 +62,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          'cthd.jpg'
+          '38398.jpg'
         } else {
           input$file1$datapath
         }
@@ -77,7 +77,7 @@ shinyServer(function(input, output) {
     src = if (input$tabs == "Upload Image") {
       if (is.null(input$file1)) {
         if (input$goButton == 0 || is.null(ntext())) {
-          'cthd.jpg'
+          '38398.jpg'
         } else {
           ntext()
         }
@@ -87,7 +87,7 @@ shinyServer(function(input, output) {
     } else {
       if (input$goButton == 0 || is.null(ntext())) {
         if (is.null(input$file1)) {
-          'cthd.jpg'
+          '38398.jpg'
         } else {
           input$file1$datapath
         }
