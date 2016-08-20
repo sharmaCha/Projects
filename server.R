@@ -17,7 +17,7 @@ require(caTools)
 #install.packages("imager")
 require(imager)
 
-trainDF <- read.csv("E:\\ADS_Yelp_Analysis\\DataModel\\train_Yelp.csv")
+trainDF <- read.csv(".\\train_Yelp.csv")
 trainDF <- na.omit(trainDF)
 trainDF <- trainDF[,2:401]
 set.seed(123)
